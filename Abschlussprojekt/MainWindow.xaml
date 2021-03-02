@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="179*"/>
+            <ColumnDefinition Width="161*"/>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="25*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Bestätigen" HorizontalAlignment="Left" Margin="184,364,0,0" VerticalAlignment="Top" Width="190" Grid.Column="1" AutomationProperties.Name="SubmitData" Height="45" Grid.ColumnSpan="2" Click="Button_Click"/>
+        <Label Content="Vorname" HorizontalAlignment="Left" Margin="33,53,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.341,-0.501" Background="Transparent" Height="25" Width="80"/>
+        <TextBox HorizontalAlignment="Left" Height="81" Margin="33,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="699" TextChanged="TextBox_TextChanged" Grid.ColumnSpan="3" AutomationProperties.Name="TbSurname" Background="#FFF3F2EC"/>
+
     </Grid>
 </Window>
